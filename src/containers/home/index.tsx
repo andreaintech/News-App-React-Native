@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import { StyleSheet, Dimensions, SafeAreaView } from 'react-native';
 
 import SearchSection from './components/SearchSection';
-import LatesNewsSection from './components/LatestNewsSection';
+import LatestNewsSection from './components/LatestNewsSection';
+import LatestNewsListSection from './components/LatestNewsListSection';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -12,7 +13,8 @@ const Home = () => {
     <SafeAreaView style={styles.container}>
 
       <SearchSection />
-      <LatesNewsSection />
+      <LatestNewsSection />
+      <LatestNewsListSection />
 
       {/* <View style={styles.header}></View>
       <View style={styles.latestNews}></View>
@@ -30,11 +32,6 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     alignItems: 'center',
     marginTop: 38,
-  },
-  header: {
-    borderWidth: 1,
-    width: WIDTH - 30,
-    height: 32,
   },
   latestNews: {
     borderWidth: 1,
