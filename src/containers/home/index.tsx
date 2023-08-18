@@ -4,6 +4,7 @@ import { StyleSheet, Dimensions, SafeAreaView } from 'react-native';
 import SearchSection from './components/SearchSection';
 import LatestNewsSection from './components/LatestNewsSection';
 import LatestNewsListSection from './components/LatestNewsListSection';
+import CategoriesSection from './components/CategoriesSection';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -15,6 +16,7 @@ const Home = () => {
       <SearchSection />
       <LatestNewsSection />
       <LatestNewsListSection />
+      <CategoriesSection />
 
       {/* <View style={styles.header}></View>
       <View style={styles.latestNews}></View>
