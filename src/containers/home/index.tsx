@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { StyleSheet, Dimensions, SafeAreaView } from 'react-native';
 
 import SearchSection from './components/SearchSection';
+import LatesNewsSection from './components/LatestNewsSection';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -10,8 +11,8 @@ const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
 
-      <SearchSection/>
-      
+      <SearchSection />
+      <LatesNewsSection />
 
       {/* <View style={styles.header}></View>
       <View style={styles.latestNews}></View>
@@ -26,7 +27,6 @@ export default Home
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-between',
     alignContent: 'center',
     alignItems: 'center',
     marginTop: 38,
