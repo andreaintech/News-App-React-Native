@@ -31,9 +31,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 38,
   },
-  news: {
-    borderWidth: 1,
-    width: WIDTH - 30,
-    height: WIDTH - 270,
-  },
 });

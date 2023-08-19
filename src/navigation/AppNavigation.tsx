@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -9,7 +8,6 @@ import NewsDetail from '../containers/news-detail';
 import Notification from '../containers/notification';
 
 import { HOME, NEWS_DETAIL, NOTIFICATION, SEARCH } from './routes';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();
 
