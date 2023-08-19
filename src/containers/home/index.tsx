@@ -5,6 +5,7 @@ import SearchSection from './components/SearchSection';
 import LatestNewsSection from './components/LatestNewsSection';
 import LatestNewsListSection from './components/LatestNewsListSection';
 import CategoriesSection from './components/CategoriesSection';
+import NewsSection from './components/NewsSection';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -12,16 +13,11 @@ const Home = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-
       <SearchSection />
       <LatestNewsSection />
       <LatestNewsListSection />
       <CategoriesSection />
-
-      {/* <View style={styles.header}></View>
-      <View style={styles.latestNews}></View>
-      <View style={styles.categories}></View>
-      <View style={styles.news}></View> */}
+      <NewsSection />
     </SafeAreaView>
   )
 }
@@ -34,16 +30,6 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     alignItems: 'center',
     marginTop: 38,
-  },
-  latestNews: {
-    borderWidth: 1,
-    width: WIDTH - 30,
-    height: WIDTH - 135,
-  },
-  categories: {
-    borderWidth: 1,
-    width: WIDTH - 30,
-    height: 32,
   },
   news: {
     borderWidth: 1,
