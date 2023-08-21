@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -7,7 +8,10 @@ const LatestNewsSection = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Latest News</Text>
-      <Text>See all</Text>      
+      
+      <TouchableOpacity>
+        <Text>See all</Text>     
+      </TouchableOpacity>
     </View>
   )
 }

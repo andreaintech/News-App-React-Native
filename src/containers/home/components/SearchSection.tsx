@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Image, TextInput, StyleSheet, View, Dimensions } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import {PRIMARY} from '../../../styles/colors';
 
@@ -18,12 +19,12 @@ const SearchSection = () => {
       />
       </View>
       
-      <View style={styles.notificationIcon}>
-      <Image
-          source={require('../../../assets/svg/just-bell.svg')}
-          style={{ width: 13, height: 16 }}
-      />
-      </View>
+      <TouchableOpacity style={styles.notificationIcon}>
+        <Image
+            source={require('../../../assets/svg/just-bell.svg')}
+            style={{ width: 13, height: 16 }}
+        />
+      </TouchableOpacity>
     </View>
   );
 }

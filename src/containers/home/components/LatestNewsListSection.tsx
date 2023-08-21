@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, FlatList, StyleSheet, View, Dimensions } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -33,7 +34,7 @@ const Item = ({author, title, description, index}: ItemProps) => {
   const itemHeightStyle = index === 0 ? {height: firstItemHeight} : {height: defaultItemHeight, marginTop: 8,};
 
   return (
-    <View style={[styles.itemContainer, itemHeightStyle]}>
+    <TouchableOpacity style={[styles.itemContainer, itemHeightStyle]}>
       <View style={styles.item}>
         <>
           <Text style={styles.author}>{author}</Text>
@@ -42,7 +43,7 @@ const Item = ({author, title, description, index}: ItemProps) => {
         
         <Text style={styles.description}>{description}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

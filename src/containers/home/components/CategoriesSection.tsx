@@ -1,7 +1,9 @@
 import React from 'react';
 import { FlatList, StyleSheet, Dimensions, View, Text } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { PRIMARY } from '../../../styles/colors';
+
 const WIDTH = Dimensions.get('window').width;
 
 const DATA = [
@@ -32,9 +34,9 @@ type ItemProps = {title: string, index: number};
 
 const Item = ({title}: ItemProps) => {
     return (
-      <View style={styles.item}>
+      <TouchableOpacity style={styles.item}>
         <Text style={styles.title}>{title}</Text>
-      </View>
+      </TouchableOpacity>
     );
 };
 
@@ -60,24 +62,24 @@ const CategoriesSection = () => {
 export default CategoriesSection
 
 const styles = StyleSheet.create({
-    container: {
-        height: 32,
-        marginLeft: 15,
-        marginTop: 24,
-    },
-    item: {
-        height: WIDTH - 343,
-        paddingHorizontal: 16,
-        paddingVertical: 8,
-        backgroundColor: PRIMARY,
-        borderRadius: 16,
-        marginRight: 8,
-    },
-    title: {
-        fontWeight: '600',
-        fontSize: 12,
-        lineHeight: 16.37,
-        color: "#FFF",
-        textAlign: 'center'
-    }
+  container: {
+    height: 32,
+    marginLeft: 15,
+    marginTop: 24,
+  },
+  item: {
+    height: WIDTH - 343,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    backgroundColor: PRIMARY,
+    borderRadius: 16,
+    marginRight: 8,
+  },
+  title: {
+    fontWeight: '600',
+    fontSize: 12,
+    lineHeight: 16.37,
+    color: "#FFF",
+    textAlign: 'center'
+  }
 });
