@@ -10,7 +10,6 @@ import NewsSection from './components/NewsSection';
 const WIDTH = Dimensions.get('window').width;
 
 const Home = () => {
-
   return (
     <SafeAreaView style={styles.container}>
       <SearchSection />
